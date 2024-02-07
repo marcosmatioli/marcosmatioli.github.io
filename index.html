@@ -1,105 +1,78 @@
-<!--
-
-https://github.com/marcosmatioli/DesenvolvimentoWebCompleto.git
-
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Marcos Matioli</title>
-    <!--Google Fontes--> <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
-    <!--Dev Icon Fonts-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <!--Css do Projeto-->
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sobre você   </title>
 </head>
 <body>
-    <main id="container">
-        <aside id="bio-container">
-        <h2>Marcos Matioli</h2>
-        <img id="bio-img" src="img/foto1.jpg" alt="Marcos Matioli">
-        <p>Olá, meu nome é Marcos Matioli e sou <span class="highlight"></span> Desenvolvedor.</p>
-        <p id="welcome-text">Seja Bem-Vindo!</p>
-        <ul id="social-container">
-            <li><a href="https://www.facebook.com/marcos.matioli.50/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="https://www.linkedin.com/in/marcos-matioli-995607167/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-            <li><a href="https://www.instagram.com/matiolimarcos/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-        </ul>
-        <div id="email-container">
-            <a href="mailto:matiolimarcos@gmail.com"><ion-icon name="mail-outline"></ion-icon>matiolimarcos@gmail.com</a>
-        </div>
-     </aside>
-    <section id="about-container">
-        <h1 id="name"> Marcos Matioli</h1>
-        <p id="tittle"><span class="highlight">Desenvolvedor Back-End</span></p>
-        <p class="description">Sou um desenvolver back-end em aprendizado, Formado em <span class="highlight">Bacharel em Ciências da Computação</span> pela UNIP e técnico 
-            em <span class="highlight">Análise e Desenvolvimento de Sistemas</span></p>
-        <p class="description">Em busca da primeira oportunidade para mostrar meu <span class="highlight">conhecimento</span>
-            de <span class="highlight">lógica de programação</span>.  </p>
-        <a href="https://github.com/marcosmatioli" id="btn-projects"><ion-icon name="share-social-outline"></ion-icon><span>Ver Projetos</span></a>
-        <h2 id="skills-section-tittle">Meus conhecimentos</h2>
-        <p class="description"></p>
-        <div id="skills-container">
-
-            <div class="skills-box">
-                <p class="skills-tittle">Front-End</p>
-                <i class="devicon-html5-plain colored"></i>
-                <i class="devicon-css3-plain colored"></i>
-                <i class="devicon-javascript-plain colored"></i>
-                <i class="devicon-sass-original colored"></i>
-
-            </div>
-            <div class="skills-box">
-                <p class="skills-tittle">Front-End Framework</p>
-                <i class="devicon-angularjs-plain colored"></i>
-                <i class="devicon-bootstrap-plain-wordmark colored"></i>
-                <!--
-                <i class="devicon-ionic-original-wordmark colored"></i>
-                <i class="devicon-react-original-wordmark colored"></i>
-                -->
-                
-          
-            </div>
-            <div class="skills-box">
-                <p class="skills-tittle">Back-end</p>
-                <i class="devicon-nodejs-plain colored"></i>
-                <i class="devicon-php-plain colored"></i>
-                <i class="devicon-java-plain-wordmark colored"></i>
-          
-            </div>
-            <div class="skills-box">
-                <p class="skills-tittle">Back-end Framework</p>
-                <i class="devicon-jquery-plain-wordmark colored"></i>
-                <!--
-                    <i class="devicon-wordpress-plain-wordmark"></i>
-                -->
-                
-            </div>
-            <div class="skills-box">
-                <p class="skills-tittle">Database</p>
-                <i class="devicon-mysql-plain colored"></i>
-            </div>
-            <div class="skills-box">
-                <p class="skills-tittle">Tools</p>
-                <i class="devicon-git-plain colored"></i>
-                <i class="devicon-github-original"></i> 
-                
-            </div>
-        </div>
-    </section>
-
-    </main>
-
+    <h1>Sentimentos por Marianna</h1>
     
-    <!--Icon-->
-    <!--Fonts-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <div class="poetry-container">
+        <div class="poetry-cards">
+            <!-- primeira fileira -->
+            <div class="poetry-row">
+
+                <div class="poetry-card" onmouseover="revealPoetry(this)">
+                    <div class="front" style="background-color: violet;">
+                        <p>Desejo</p>
+                    </div>
+                    <div class="back" style="background-color: violet;">
+                        <p>Meu desejo por ti é uma chama constante, uma motivação que guia meus passos na busca de te fazer feliz, pleno de conquistas ao teu lado.</p>
+                    </div>
+                </div>
+
+                <div class="poetry-card" onmouseover="revealPoetry(this)">
+                    <div class="front" style="background-color: greenyellow;">
+                        <p>Felicidade</p>
+                    </div>
+                    <div class="back" style="background-color: greenyellow;">
+                        <p>A felicidade encontra sua morada em cada sorriso seu Marianna, transformando a jornada da vida em uma aventura repleta de alegrias compartilhadas.</p>
+                    </div>
+                </div>
+
+                <div class="poetry-card" onmouseover="revealPoetry(this)">
+                    <div class="front" style="background-color: #de3163;">
+                        <p>Paixão</p>
+                    </div>
+                    <div class="back" style="background-color: #de3163;">
+                        <p>Em teus olhos, a paixão floresce como um incêndio ardente, envolvendo meu coração com um entusiasmo irresistível por ti.</p>
+                    </div>
+                </div>
+
+                <div class="poetry-card" onmouseover="revealPoetry(this)">
+                    <div class="front" style="background-color: deeppink">
+                        <p>Amor</p>
+                    </div>
+                    <div class="back" style="background-color: deeppink">
+                        <p>Nosso amor é uma dança suave, um vínculo eterno que transcende o tempo, onde cada olhar e toque ecoam um carinho profundo e eterno.</p>
+                    </div>
+                </div>
+
+                <div class="poetry-card" onmouseover="revealPoetry(this)">
+                    <div class="front" style="background-color: DeepSkyBlue;">
+                        <p>Saudades</p>
+                    </div>
+                    <div class="back" style="background-color: DeepSkyBlue;">
+                        <p>A saudade é um suave sussurro do tempo, ecoando memórias de momentos contigo, Marianna, criando uma melodia nostálgica no coração.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- segunda fileira -->
+            <div class="poetry-row">
+            </div>
+        </div>
+    </div>
+    <div class="achou">
+        Olá Marianna, será que você vai encontrar esse Easter Eggs? Espero que sim.
+        Queria dizer que depois de entregar o livro para você, fiquei aguardando uma resposta sua sobre o livro,
+        se você gostou ou não. Sabia que eu respeito e entendo que como você disse: "Agora talvez não seja o momento",
+        me deixa aberta as possibilidades para que eu continue criando/elaborando "presentes" e fazendo minhas homenagens a você.
+        Espero que goste e não ache esquisito.
+    </div>
+        
+    
 </body>
 </html>
