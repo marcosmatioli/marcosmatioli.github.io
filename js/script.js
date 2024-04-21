@@ -38,3 +38,18 @@ function revealPoetry(poetryCard) {
     const revealButton = poetryCard.querySelector('.reveal-button');
     revealButton.classList.add('clicked');
 }
+
+
+var imagens = [
+    'imagem1.jpg',
+    'imagem2.jpg',
+    'imagem3.jpg',
+];
+
+var slideaway = document.querySelector('.slideaway');
+
+imagens.forEach(function(url) {
+    var img = document.createElement('img');
+    img.src = url;
+    slideaway.appendChild(img);
+});
