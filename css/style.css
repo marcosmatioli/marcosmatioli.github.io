@@ -1,120 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-body { 
-    font-family: 'Times New Roman', serif;
+* {
     margin: 0;
     padding: 0;
-    background-image: url('../img/heart.jpg');
-    background-color: greenyellow;
-}
-.poetry-container {
-    height: auto;
-    width: auto;
-    display: grid;
+    box-sizing: border-box;
+
 }
 
-.poetry-card {
-    position: flex;
-    width: 450px;
-    height: 300px;
-    perspective: 1000px;
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #f9f3ea;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/heart.jpg')
 }
 
-.front,
-.back {
-    font-family: 'Times New Roman', Times, serif;
-    position: absolute;
+.notebook {
+    width: 900px; /* Aumentei a largura para 900px */
+    height: 800px;
+    background-color: #fff;
+    border: 2px solid #e6e0d4;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 40px;
+}
+
+.page {
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
-    padding: 20px;
-    text-align: left;
-    border-radius: 10px;
-    overflow: hidden;
-    backface-visibility: hidden;
+    background: repeating-linear-gradient(#e6e0d4 0, #e6e0d4 1px, #fff 1px, #fff 40px);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.page h1 {
+    font-family: 'Cursive', serif;
+    color: #b56576;
     text-align: center;
-    font-size: 2em;
-    
+    margin-bottom: 30px;
+    padding: 25px;
 }
 
-.front {
-    transform: rotateX(0deg);
-    transition: transform 1s ease-in-out;
-    
+.page p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: justify;
 }
 
-.back {
-    transform: rotateX(180deg);
-    transition: transform 1s ease-in-out;
-    font-size: 1.3em;
-    display: flex;
-}
-.poetry-card:hover .front {
-    transform: rotateX(-180deg);
-}
-
-.poetry-card:hover .back {
-    transform: rotateX(0deg);
-}
-
-.poetry-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-.poetry-row {
-    display: flex;
-    margin: 0px;
-}
-
-.poetry-card {
-    margin: 10px;
-}
-
-h1{
-
-    border-right: 2px;
-    position: relative;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    font-size: 50px;
-    white-space: nowrap;
-    margin-bottom:50px;
-}
-
-.slideaway {
-    position: relative;
-    width: 100%;
-    height: 200px; 
-    overflow: hidden;
-}
-
-.slideaway img {
+.page::before {
+    content: "";
     position: absolute;
     top: 0;
-    left: -100%; /* Começa fora da tela à esquerda */
-    animation: slideRight 30s linear infinite; /* Ajuste a duração e o tempo conforme necessário */
+    left: 50px;
+    width: 2px;
+    height: 100%;
+    background-color: #b56576;
 }
 
-@keyframes slideRight {
-    0% {
-        left: -100%; /* Começa fora da tela à esquerda */
-    }
-    100% {
-        left: 100%; /* Termina fora da tela à direita */
-    }
-}
-.slideaway img:nth-child(2) {
-    animation-delay: 600ms; /* Atraso para a segunda imagem começar a se mover */
-}
-
-/*EASTER EGG MAMIS*/
-.achou{
-    text-align: center;
-    font-size: 30px;
-    color: rgba(255, 255, 255, 0);
-    font-style: bold;
+.page::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 850px; /* Ajustei a posição da borda para coincidir com a nova largura */
+    width: 2px;
+    height: 100%;
+    background-color: #b56576;
 }
