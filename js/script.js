@@ -1,14 +1,14 @@
 const questions = [
-  "Qualidade do pastel 🥟",
-  "Temperatura do caldo de Cana 🥤",
-  "Química entre nós, teve? 😏",
-  "Foi engraçado? 😂",
-  "Conversa fluiu? 🗣️",
-  "O lugar foi bom 🌆",
-  "Repetiria esse date? 🔁",
-  "Vergonha alheia 😬",
-  "Compatibilidade 💘",
-  "Chance de segundo encontro 💍"
+  "Ele é traquina? 🤖",
+  "Ele é divertido? 😄",
+  "Ele é inteligente? 🧠",
+  "Ele é engraçado? 😂",
+  "Ele é diferente? 🌈",
+  "É um bom ouvinte? 👂",
+  "Ele é Cheiroso ? 👃",
+  "De 0 a 10, o quanto você acha ele divo? 👑",
+  "Rolou uma química? 😳",
+  "Indicaria para uma amiga? 👭"
 ];
 
 let current = 0;
@@ -82,13 +82,13 @@ function finish() {
   let message = "";
 
   if (avg <= 2.5) {
-    message = "🚨 Esse date foi mais frio que caldo de cana gelado... difícil defender 😬";
+    message = "Nossa o marcos é tão ruim assim? 😢";
   } else if (avg <= 5) {
-    message = "😐 Foi ok... mas talvez faltou tempero nesse pastel";
+    message = "Ok ok, não foi tão ruim!";
   } else if (avg <= 7.5) {
-    message = "😏 Olha... temos potencial! Vale um segundo round";
+    message = "Olha só, o Marcos realmente merece essa nota!";
   } else {
-    message = "🔥 Esse date foi um espetáculo! Já pode marcar o próximo!";
+    message = "ESQUEÇA TUDO, EU SOU DIVO KKKK zoas, mas sério, que nota maravilhosa! 😍";
   }
 
   const payload = {
